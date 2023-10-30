@@ -23,7 +23,7 @@ while true; do
     # 检查总发送和接收速率是否超过阈值
     if [ "$traffic_value" -gt "$threshold" ]; then
         echo "警报：$target_ip 的总网速超过 ${threshold}kb/s"
-        curl <bark推送服务器地址>
+        curl <bark推送服务器地址和推送内容>
     fi
     sleep 5  # 每5秒检查一次，可以根据需要调整
 done
