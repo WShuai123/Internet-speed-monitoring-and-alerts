@@ -1,7 +1,7 @@
 #!/bin/ash
 
 # 设置要监控的 IP 地址和阈值
-target_ip="10.0.0.164"
+target_ip="10.0.0.164/24"
 threshold=100  # 以 kb/s 为单位
 
 while true; do
